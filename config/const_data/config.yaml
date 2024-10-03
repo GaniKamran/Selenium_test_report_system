@@ -1,0 +1,30 @@
+# config.yaml
+app:
+  name: MyStaticApp
+  version: 1.0.0
+  description: "This is a sample static YAML configuration file."
+
+alert:
+  - id: 1
+    case: "critic"
+    email: "you need qiucly eliminate it"
+  - id: 2
+    name: "normal"
+    email: "say to something to help us"
+
+users:
+  - id: 1
+    name: "John Doe"
+    email: "john.doe@example.com"
+  - id: 2
+    name: "Jane Smith"
+    email: "jane.smith@example.com"
+
+settings:
+  debug_mode: false
+  max_connections: 100
+
+messages:
+  welcome: "Welcome to the system!"
+  farewell: "Thank you for using our service!"
+  error: "An unexpected error has occurred."

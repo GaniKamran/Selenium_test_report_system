@@ -1,6 +1,14 @@
 # Use an official Python runtime as a parent image
 FROM python:3.11.4
 
+
+# Set environment variable from the build argument
+ARG TOKEN
+ENV TOKEN=${TOKEN}
+
+ARG ADRESS_HOST
+ENV ADRESS_HOST =${ADRESS_HOST}
+
 # Set the working directory to /app
 WORKDIR /app
 
